@@ -1,33 +1,35 @@
-/* Basic styles for the buttons and layout */
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #A882DD; 
+    margin: 0;
     font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-	background-color:#74fcb1;
 }
-
+ 
 #buttons {
     display: flex;
-    align-items: center;
-    gap:10px;
+    gap: 20px;
 }
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
+ 
 .btn {
-    background-color:#055e20;
+    background-color: #5B2D86; 
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+ 
+.btn:hover {
+    background-color: #6C3D9B; 
+}
+ 
+ 
+.stop:hover {
+    background-color: #FF7F75; 
 }
 
-.stop {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
