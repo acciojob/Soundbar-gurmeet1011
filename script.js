@@ -13,10 +13,8 @@ stopButton.addEventListener('click', stopSound);
  
 function playSound(sound) {
     stopSound(); 
- 
- 
     currentAudio = document.createElement('audio');
-    currentAudio.src = ./sounds/${sound}.mp3;
+    currentAudio.src = `./sounds/${sound}.mp3`;
     currentAudio.setAttribute('controls', 'controls'); 
     currentAudio.style.display = 'none'; 
     document.body.appendChild(currentAudio);
