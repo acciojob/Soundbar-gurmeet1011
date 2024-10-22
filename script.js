@@ -21,5 +21,13 @@ function playSound(sound) {
  
     currentAudio.play();
 }
- 
+ function stopSound() {
+    if (currentAudio) {
+        currentAudio.pause();  // Stop the current audio
+        currentAudio.currentTime = 0;  // Reset the playback position
+        document.body.removeChild(currentAudio);  // Remove the audio element
+        currentAudio = null;
+    }
+}
+
 
